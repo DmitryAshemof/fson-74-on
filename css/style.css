@@ -1,0 +1,155 @@
+:root {
+    --primary-h-color: #303030;
+    --second-h-color: #FFFFFF;
+    --primary-link-color: #FFFFFF;
+    --accent-color: #FF6C00;
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+
+body {
+font-family: "Open Sans", "Realway", sans-serif;
+}
+.btn {
+font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    } 
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+}
+/* -----Header----- */
+
+.header {
+    background-color: gray;
+}
+.header-link {
+     font-weight: 600;
+     font-size: 12px;
+     line-height: 1.33;
+     letter-spacing: 0.1em;
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+       color: var();
+}  
+.header-btn {
+    color: #FFFFFF;
+}
+.pre-title{
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+}
+.title{
+    font-family: "Realway", sans-serif;
+        font-size: 72px;
+        line-height: 1.18;
+        letter-spacing: 0.05em;
+}
+
+
+/* -----Hero----- */
+
+.hero {
+    background-color: #303030;
+    
+}
+
+.sub-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {   
+        color: var(--second-h-color);
+}
+
+.hero-text {
+        font-size: 18px;
+        line-height: 1.67;    
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+}
+
+.hero-links {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.2em;
+        color: var(--primary-link-color);
+}
+.hero-links:hover,
+.hero-links:focus {
+    color: #FF6C00; 
+}
+.link {}
+
+/* -----About----- */
+
+.about {
+   
+}
+
+.about-pre-title {
+        color: var(--primary-h-color);
+}
+
+.about-title {
+        color: var(--primary-h-color);
+}
+
+.about-after-title {
+        font-size: 18px;
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+        color: #555555;
+}
+
+.about-text {
+        font-size: 14px;
+        line-height: 1.85;
+        letter-spacing: 0.02em;
+        color: #555555;
+}
+
+.about-btn {
+        color: #FFFFFF;
+}
+/* -----prices----- */
+
+.prices-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+    color: var(--second-h-color);
+}
+
+.prices-items {
+        font-size: 18px;
+        line-height: 1.66;
+        text-align: right;
+        letter-spacing: 0.02em;
+    
+        color: #9DA4BD;
+}
+.btn{
+    color: #FFFFFF;
+}
