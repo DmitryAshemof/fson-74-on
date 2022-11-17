@@ -4,7 +4,10 @@
     --accent-color: #FF6C00;
     --p-text-color: #555555;
     --link-color: #FFFFFF;
-}
+    --third-text-color: #9DA4BD;
+}   
+
+/* -----utilities----- */
 
 .link {
     text-decoration: none;
@@ -46,9 +49,22 @@ font-family: inherit;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     } 
+
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
 }
 /* ----Header---- */
 
@@ -60,9 +76,12 @@ font-family: inherit;
      font-size: 12px;
      line-height: 1.33;
      letter-spacing: 0.1em;
+
+    color: var(--link-color);
 }
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-logo {
     color: var(--accent-color);
 }
 
@@ -96,7 +115,7 @@ font-family: inherit;
         font-size: 18px;
         line-height: 1.67;    
         letter-spacing: 0.02em;
-        color: #9DA4BD;
+        color: var(--third-text-color);
 }
 
 .hero-links {
@@ -156,7 +175,7 @@ font-family: inherit;
         text-align: right;
         letter-spacing: 0.02em;
     
-        color: #9DA4BD;
+        color: var(--third-text-color);
 }
 .btn{
     color: var(--second-h-color);
@@ -191,6 +210,95 @@ font-family: inherit;
      color: var(--primary-h-color);
 }
 
-.benefits-after-title {
-   color:  #555555;
+/* -----barbers----- */
+
+.barbers-pre-title {
+    color: var(--primary-h-color);
+}
+
+.barbers-title {
+    color: var(--primary-h-color);
+}
+
+.barbers-name {
+       font-weight: 400;
+        font-size: 18px;
+        line-height: 1.39;
+        text-align: center;
+        letter-spacing: 0.02em;
+    
+        color: var(--primary-h-color);
+}
+
+.barbers-info {
+        font-size: 14px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.02em;
+    
+        color: var(--accent-color);
+}
+
+/* -----gallery----- */
+
+.gallery-pre-title{
+
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+
+    color: var(--primary-h-color);
+    
+}
+
+/* -----form----- */
+
+.form-title{
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+    
+        color: var(--second-h-color);
+}
+
+/* -----contacts----- */
+.contacts{
+    background-color: #555555;
+}
+.contacts-title{
+        color: var(--second-h-color);
+}
+.contact-link{
+
+      font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66;  
+        letter-spacing: 0.02em;
+    
+        color: var(--third-text-color);
+}
+.contact-address{
+    font-weight: 700;
+}
+.contact-pre-title{
+    color: var(--second-h-color);
+}
+.contact-text{
+    color: var(--third-text-color);
+}
+ 
+/* -----footer----- */
+
+.footer-copy{
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.2em;
+    
+        color: var(--third-text-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
 }
