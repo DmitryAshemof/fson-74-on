@@ -71,7 +71,9 @@ font-family: inherit;
 .header {
     background-color: gray;
 }
-.header-link {
+.header-link,
+.header-logo,
+.header-tel {
      font-weight: 600;
      font-size: 12px;
      line-height: 1.33;
@@ -80,8 +82,17 @@ font-family: inherit;
     color: var(--link-color);
 }
 .header-link:hover,
-.header-link:focus,
-.header-logo {
+.header-link:focus{
+    color: var(--accent-color);
+}
+
+.header-tel:hover,
+.header-tel:focus{
+color: var(--accent-color);
+}
+
+.header-logo:hover,
+.header-logo:focus {
     color: var(--accent-color);
 }
 
@@ -90,7 +101,7 @@ font-family: inherit;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-       color: var();
+       color: var(--link-color);
 }  
 .header-btn {
     color: var(--second-h-color);
