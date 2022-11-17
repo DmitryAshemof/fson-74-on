@@ -1,9 +1,11 @@
 :root {
     --primary-h-color: #303030;
     --second-h-color: #FFFFFF;
-    --primary-link-color: #FFFFFF;
     --accent-color: #FF6C00;
+    --p-text-color: #555555;
+    --link-color: #FFFFFF;
 }
+
 .link {
     text-decoration: none;
 }
@@ -14,6 +16,28 @@
 body {
 font-family: "Open Sans", "Realway", sans-serif;
 }
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: "Realway", sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+.after-title{
+    font-size: 18px;
+    line-height: 1.66;
+    
+    letter-spacing: 0.02em;
+}
+
 .btn {
 font-family: inherit;
     font-weight: 600;
@@ -50,26 +74,13 @@ font-family: inherit;
        color: var();
 }  
 .header-btn {
-    color: #FFFFFF;
+    color: var(--second-h-color);
 }
-.pre-title{
-    font-weight: 600;
-        font-size: 11px;
-        line-height: 1.36;
-        text-transform: uppercase;
-}
-.title{
-    font-family: "Realway", sans-serif;
-        font-size: 72px;
-        line-height: 1.18;
-        letter-spacing: 0.05em;
-}
-
 
 /* -----Hero----- */
 
 .hero {
-    background-color: #303030;
+    background-color: var(--primary-h-color);
     
 }
 
@@ -97,15 +108,12 @@ font-family: inherit;
 }
 .hero-links:hover,
 .hero-links:focus {
-    color: #FF6C00; 
+    color: var(--accent-color); 
 }
 .link {}
 
 /* -----About----- */
 
-.about {
-   
-}
 
 .about-pre-title {
         color: var(--primary-h-color);
@@ -119,18 +127,18 @@ font-family: inherit;
         font-size: 18px;
         line-height: 1.66;
         letter-spacing: 0.02em;
-        color: #555555;
+        color: var(--p-text-color);
 }
 
 .about-text {
         font-size: 14px;
         line-height: 1.85;
         letter-spacing: 0.02em;
-        color: #555555;
+        color: var(--p-text-color);
 }
 
 .about-btn {
-        color: #FFFFFF;
+        color: var(--second-h-color);
 }
 /* -----prices----- */
 
@@ -151,5 +159,38 @@ font-family: inherit;
         color: #9DA4BD;
 }
 .btn{
-    color: #FFFFFF;
+    color: var(--second-h-color);
+}
+
+/* -----benefits----- */
+
+.benefits-items > span {
+   font-size: 42px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--primary-h-color);
+}
+.benefits-items > sup{
+   
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.38;
+    
+        text-align: center;
+    
+        color: var(--accent-color);
+}
+.benefits-pre-title {
+    color: var(--primary-h-color);
+}
+
+.benefits-title {
+
+     color: var(--primary-h-color);
+}
+
+.benefits-after-title {
+   color:  #555555;
 }
