@@ -77,7 +77,7 @@ font-family: "Open Sans", "Realway", sans-serif;
 }
 .title {
     font-family: "Realway", sans-serif;
-    font-size: 72px;
+    font-size: 42px;
     line-height: 1.18;
     letter-spacing: 0.05em;
 }
@@ -90,13 +90,17 @@ font-family: "Open Sans", "Realway", sans-serif;
 }
 
 .btn {
-font-family: inherit;
+   font-family: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    } 
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+} 
 
 .btn:hover,
 .btn:focus {
@@ -119,12 +123,29 @@ font-family: inherit;
 .header {
     background-color: gray;
 }
+
+header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header-list{
+    display: flex;
+}
+
 .header-logo{
    display: block;
+   margin-right: 130px;
    padding-top: 32px;
+   padding-bottom: 32px;
+   align-items: center;
+}
+
+.header-list > li:not(:last-child){
+    margin-right: 30px;
 }
 .header-link,
-.header-logo,
+
 .header-tel {
      font-weight: 600;
      font-size: 12px;
@@ -148,6 +169,10 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+.header-cont{
+    margin-left: auto;
+}
+
 .header-tel {
     font-weight: 600;
     font-size: 12px;
@@ -157,14 +182,23 @@ color: var(--accent-color);
 }  
 .header-btn {
     color: var(--second-h-color);
+    margin-left: 40px;
 }
 
 /* -----Hero----- */
 
 .hero {
     background-color: var(--primary-h-color);
-    
 }
+
+.hero-list{
+    width: 100px;
+}
+
+/* .about-items:not(:last-child){
+    margin-right: 30px;
+} */
+
 .hero-right{
 padding-top: 184px;
 padding-bottom: 238px;
@@ -201,10 +235,23 @@ padding-right: 526px;
 .link {}
 
 /* -----About----- */
+
+.about .container {
+    display: flex;
+}
+
+.about-items {
+    margin-right: 30px;
+}
+
 .about{
     padding-top: 120px;
     padding-bottom: 120px;
     padding-right: 600px;
+}
+
+.list-about {
+    display: flex;
 }
 
 .about-pre-title {
@@ -234,12 +281,12 @@ padding-right: 526px;
 }
 
 .about-btn {
-        color: var(--second-h-color);
+        color: var(--primary-h-color);
 }
 /* -----prices----- */
 
-.prices-pre-title{
-    margin-bottom: var(--main-margin-bottom);
+.prices-list-wrap{
+    display: flex;
 }
 
 .prices-title{
@@ -251,11 +298,13 @@ padding-right: 526px;
 
 .prices-list{
     margin-bottom: 44px;
+    margin-right: 30px;
     outline: 2px solid red;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 21px;
     padding-left: 21px;
+    flex-grow: 1;
 }
 
 .prices{
@@ -275,12 +324,20 @@ padding-right: 526px;
 }
 
 .prices-items {
-        font-size: 18px;
-        line-height: 1.66;
-        text-align: right;
-        letter-spacing: 0.02em;
+    display: flex;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    
+    text-align: revert;
+    justify-content: space-between;
+     margin-bottom: var(--main-margin-bottom);
     
         color: var(--third-text-color);
+}
+
+.prices-items:last-child{
+    margin-bottom: 0px;
 }
 
 .prices-btn{
@@ -356,6 +413,18 @@ padding-right: 526px;
     padding-left: 0px;
 }
 
+.barber-list{
+    display: flex;
+   
+}
+.barbers-items:not(:last-child){
+  margin-right: 30px;
+}
+
+.barbers-items{
+    width: calc((100%-60px)/3);
+}
+
 .barbers-pre-title {
     margin-bottom: var(--main-margin-bottom);
     color: var(--primary-h-color);
@@ -396,8 +465,21 @@ padding-right: 526px;
     padding-left: 0px;
 }
 
+.gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px; 
+}
+
+.gallary-items{
+    width: calc((100%-120px) /4 );
+    margin-left: 30px;
+     margin-bottom: 30px;
+}
+
 .gallery-pre-title{
-    margin-bottom: var(--main-margin-bottom);
+    margin-bottom: 44px;
     font-size: 11px;
     line-height: 1.36;
     text-transform: uppercase;
@@ -445,13 +527,18 @@ padding-right: 526px;
  
 /* -----footer----- */
 
+.footer{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
 .footer-copy{
-    font-weight: 600;
-        font-size: 11px;
-        line-height: 15px;
-        letter-spacing: 0.2em;
-    
-        color: var(--third-text-color);
+     font-weight: 600;
+     font-size: 11px;
+     line-height: 15px;
+     letter-spacing: 0.2em;
+   
+     color: var(--third-text-color);
 }
 .footer-link:hover,
 .footer-link:focus {
